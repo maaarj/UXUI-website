@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base
+{
+    body {
+        font-family: 'Manrope', san-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: 'Montserrat', sans-serif;
+        
+    }
+
+    h1 {
+        font-style: normal;
+        font-weight: 600; /*Semi bold*/
+    }
+
+    h2 {
+        font-style: normal;
+        font-weight: 500;   
+    }
+}
