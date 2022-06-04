@@ -18,5 +18,8 @@
   "homepage": "https://github.com/maaarj/UXUI-website#readme",
   "devDependencies": {
     "tailwindcss": "^3.0.24"
+  },
+  "dependencies": {
+    "@tailwindcss/line-clamp": "^0.4.0"
   }
 }
