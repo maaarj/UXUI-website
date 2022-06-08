@@ -2,6 +2,7 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     /**/
+    
     extend: {
       fontSize: {
         //mobile
@@ -13,8 +14,15 @@ module.exports = {
         //tablet + desktop
         'dh1': '2.5rem', // 40px
         'ddisplay2': '2rem', // 32px
-
-      }
+      },
+      colors: {
+        'white-smoke': '#F1F4F9',
+        'denim': '#3A5B88',
+        'elephant': '#1B3045',
+        'regent-gray': '#8196AB'
+        
+    }
+      
     },
   },
   plugins: [require("@tailwindcss/line-clamp")],

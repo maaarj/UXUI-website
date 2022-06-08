@@ -28,12 +28,18 @@
         font-style: normal;
         font-weight: 500;   
     }
+
 }
 
 .card {
-    @apply bg-slate-300 rounded-xl overflow-hidden shadow-md;
+    @apply bg-white rounded-xl overflow-hidden shadow-md;
 }
 
 .card-thumbnail {
     @apply object-cover object-center w-full h-full;
+}
+
+.banner {
+    @apply 
+    md:px-10 py-32 text-center;
 }
