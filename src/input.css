@@ -33,3 +33,7 @@
 .card {
     @apply bg-slate-300 rounded-xl overflow-hidden shadow-md;
 }
+
+.card-thumbnail {
+    @apply object-cover object-center w-full h-full;
+}
