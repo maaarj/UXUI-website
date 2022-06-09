@@ -8,6 +8,7 @@
 {
     body {
         font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
     }
 
     h1,
@@ -25,12 +26,14 @@
     h2 {
         font-style: normal;
         font-weight: 500;   
-    }
+    }   
 
 }
 
 .banner {
-    @apply md:px-10 py-32 text-center;
+    @apply pt-20 pb-28 px-4 text-center 
+    md:px-10
+    lg:px-24;
 }
 
 .card {
@@ -42,6 +45,13 @@
 }
 
 .card h1 {
-    @apply text-mh3 md:text-dh1 py-2;
+    @apply text-mh1 md:text-dh1 py-2;
 }
 
+.card p {
+    @apply text-mdparagrap pb-2;
+}
+
+.card button {
+    @apply bg-denim my-2 py-2 px-4 rounded-lg text-white;
+}

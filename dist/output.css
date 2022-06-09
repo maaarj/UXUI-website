@@ -425,6 +425,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 body {
   font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
 }
 
 h1,
@@ -507,10 +508,6 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-
 .block {
   display: block;
 }
@@ -525,6 +522,18 @@ h2 {
 
 .h-6 {
   height: 1.5rem;
+}
+
+.h-80 {
+  height: 20rem;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-auto {
+  height: auto;
 }
 
 .w-6 {
@@ -543,16 +552,16 @@ h2 {
   flex-basis: 50%;
 }
 
-.basis-1\/3 {
-  flex-basis: 33.333333%;
-}
-
 .flex-col {
   flex-direction: column;
 }
 
 .items-center {
   align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
@@ -579,6 +588,10 @@ h2 {
 
 .border-b-2 {
   border-bottom-width: 2px;
+}
+
+.border-t-2 {
+  border-top-width: 2px;
 }
 
 .border-elephant {
@@ -611,9 +624,22 @@ h2 {
   background-color: rgb(58 91 136 / var(--tw-bg-opacity));
 }
 
-.bg-slate-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
+.bg-trashpanda_heroimage {
+  background-image: url('heroimage.jpg');
+}
+
+.bg-\[url\(\'heroimage\.jpg\'\)\] {
+  background-image: url('heroimage.jpg');
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.object-center {
+  -o-object-position: center;
+     object-position: center;
 }
 
 .px-4 {
@@ -636,21 +662,30 @@ h2 {
   padding-bottom: 0.5rem;
 }
 
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
-.pt-20 {
-  padding-top: 5rem;
-}
-
-.pb-28 {
-  padding-bottom: 7rem;
-}
-
 .pb-2 {
   padding-bottom: 0.5rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-\[\'Montserrat\'\] {
+  font-family: 'Montserrat';
 }
 
 .text-mdparagrap {
@@ -666,12 +701,17 @@ h2 {
   line-height: 2rem;
 }
 
-.text-mh3 {
-  font-size: 1.375rem;
+.text-mh1 {
+  font-size: 2rem;
 }
 
-.text-dh1 {
-  font-size: 2.5rem;
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-micon {
+  font-size: 1.5rem;
 }
 
 .font-semibold {
@@ -680,10 +720,6 @@ h2 {
 
 .font-normal {
   font-weight: 400;
-}
-
-.font-medium {
-  font-weight: 500;
 }
 
 .tracking-wide {
@@ -705,9 +741,9 @@ h2 {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-gray-500 {
+.text-denim {
   --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
+  color: rgb(58 91 136 / var(--tw-text-opacity));
 }
 
 .outline-none {
@@ -735,8 +771,10 @@ h2 {
 }
 
 .banner {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 5rem;
+  padding-bottom: 7rem;
   text-align: center;
 }
 
@@ -744,6 +782,13 @@ h2 {
   .banner {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .banner {
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 }
 
@@ -769,13 +814,32 @@ h2 {
 .card h1 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  font-size: 1.375rem;
+  font-size: 2rem;
 }
 
 @media (min-width: 768px) {
   .card h1 {
     font-size: 2.5rem;
   }
+}
+
+.card p {
+  padding-bottom: 0.5rem;
+  font-size: 1.188rem;
+}
+
+.card button {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(58 91 136 / var(--tw-bg-opacity));
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .hover\:text-elephant:hover {
@@ -792,8 +856,8 @@ h2 {
     display: none;
   }
 
-  .md\:max-w-xl {
-    max-width: 36rem;
+  .md\:max-w-3xl {
+    max-width: 48rem;
   }
 
   .md\:flex-row {
@@ -814,10 +878,3 @@ h2 {
     font-size: 2rem;
   }
 }
-
-@media (min-width: 1280px) {
-  .xl\:max-w-5xl {
-    max-width: 64rem;
-  }
-}
-
