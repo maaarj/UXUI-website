@@ -7,15 +7,13 @@
 @layer base
 {
     body {
-        font-family: 'Manrope', san-serif;
+        font-family: 'Montserrat', sans-serif;
     }
 
     h1,
     h2,
-    h3,
-    h4,
-    h5 {
-        font-family: 'Montserrat', sans-serif;
+    h3 {
+        font-family: 'Trirong', serif;
         
     }
 
@@ -31,6 +29,10 @@
 
 }
 
+.banner {
+    @apply md:px-10 py-32 text-center;
+}
+
 .card {
     @apply bg-white rounded-xl overflow-hidden shadow-md;
 }
@@ -39,7 +41,7 @@
     @apply object-cover object-center w-full h-full;
 }
 
-.banner {
-    @apply 
-    md:px-10 py-32 text-center;
+.card h1 {
+    @apply text-mh3 md:text-dh1 py-2;
 }
+

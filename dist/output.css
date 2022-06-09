@@ -424,15 +424,13 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 body {
-  font-family: 'Manrope', san-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1,
     h2,
-    h3,
-    h4,
-    h5 {
-  font-family: 'Montserrat', sans-serif;
+    h3 {
+  font-family: 'Trirong', serif;
 }
 
 h1 {
@@ -498,6 +496,11 @@ h2 {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .mb-6 {
@@ -646,6 +649,10 @@ h2 {
   padding-bottom: 7rem;
 }
 
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+
 .text-mdparagrap {
   font-size: 1.188rem;
 }
@@ -661,6 +668,10 @@ h2 {
 
 .text-mh3 {
   font-size: 1.375rem;
+}
+
+.text-dh1 {
+  font-size: 2.5rem;
 }
 
 .font-semibold {
@@ -723,6 +734,19 @@ h2 {
   -webkit-line-clamp: 3;
 }
 
+.banner {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .banner {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
 .card {
   overflow: hidden;
   border-radius: 0.75rem;
@@ -742,16 +766,15 @@ h2 {
      object-position: center;
 }
 
-.banner {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-  text-align: center;
+.card h1 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.375rem;
 }
 
 @media (min-width: 768px) {
-  .banner {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+  .card h1 {
+    font-size: 2.5rem;
   }
 }
 
@@ -797,3 +820,4 @@ h2 {
     max-width: 64rem;
   }
 }
+
