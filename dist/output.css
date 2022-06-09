@@ -528,14 +528,6 @@ h2 {
   height: 20rem;
 }
 
-.h-full {
-  height: 100%;
-}
-
-.h-auto {
-  height: auto;
-}
-
 .w-6 {
   width: 1.5rem;
 }
@@ -622,10 +614,6 @@ h2 {
 .bg-denim {
   --tw-bg-opacity: 1;
   background-color: rgb(58 91 136 / var(--tw-bg-opacity));
-}
-
-.bg-trashpanda_heroimage {
-  background-image: url('heroimage.jpg');
 }
 
 .bg-\[url\(\'heroimage\.jpg\'\)\] {
