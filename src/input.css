@@ -36,6 +36,10 @@
     lg:px-24;
 }
 
+.banneroverlay {
+    @apply bg-gray-900 bg-opacity-40 absolute inset-0;
+}
+
 .card {
     @apply bg-white rounded-xl overflow-hidden shadow-md;
 }

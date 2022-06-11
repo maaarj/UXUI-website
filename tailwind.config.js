@@ -22,10 +22,6 @@ module.exports = {
         'elephant': '#1B3045',
         'regent-gray': '#8196AB'
       },
-
-      backgroundImage: {
-        'trashpanda_heroimage' : "url('heroimage.jpg')",
-      }
       
     },
   },
