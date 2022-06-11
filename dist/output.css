@@ -807,8 +807,9 @@ h2 {
 
 @media (min-width: 1024px) {
   .banner {
-    padding-left: 6rem;
-    padding-right: 6rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    padding-top: 8rem;
   }
 }
 
@@ -906,5 +907,11 @@ h2 {
 
   .md\:text-ddisplay2 {
     font-size: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:pt-28 {
+    padding-top: 7rem;
   }
 }
