@@ -909,9 +909,3 @@ h2 {
     font-size: 2rem;
   }
 }
-
-@media (min-width: 1024px) {
-  .lg\:pt-28 {
-    padding-top: 7rem;
-  }
-}
