@@ -445,6 +445,10 @@ h2 {
   font-weight: 500;
 }
 
+ul, ol {
+  list-style-type: disc;
+}
+
 *, ::before, ::after {
   --tw-translate-x: 0;
   --tw-translate-y: 0;
@@ -698,6 +702,10 @@ h2 {
 
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pl-2 {
+  padding-left: 0.5rem;
 }
 
 .text-center {
