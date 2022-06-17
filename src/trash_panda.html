@@ -91,7 +91,7 @@
     <div class="flex flex-col h-fit py-16 px-3 md:flex-row"><!--PROLLY ADD ANOTHER FLEX DIV. REMOVE FLEX FROM WRAPPER edit later-->
         <div class="basis-1/3">
             <h4>Roles</h4>
-            <ul><!--circles should be in side the div(slightly indented)-->
+            <ul class="pl-2">
                 <li>UX Researcher</li>
                 <li>UI/UX Designer</li>
             </ul>
@@ -106,40 +106,195 @@
         </div>
     </div>
 
-    
-    <div class="flex bg-[#E7EDFF] section-spacing">
+    <!--Trash panda-->
+    <div class="bg-[#E7EDFF] section-spacing">
         <div class="md:max-w-3xl">
             <h3 class="text-mh3 pb-2">Trash Panda</h3>
-            <p>Due to the increase of plastic waste during the pandemic, people who are conscious about their waste looked for another way to dispose their recyclables besides dropping it off to facilities or drop-off points. Trash panda offers a pick-up service for their recyclables.<br><br>
+            <p class="md:text-mdparagraph">Due to the increase of plastic waste during the pandemic, people who are conscious about their waste looked for another way to dispose their recyclables besides dropping it off to facilities or drop-off points. Trash panda offers a pick-up service for their recyclables.<br><br>
             To further understand their unique personality, needs and pain points, I reached out to people who left a comment on Trash panda’s Facebook posts and invited them for interview or usability testing. This led me for a partial redesign to easily find information and have a systematic way to cancel booking. </p>
         </div>
     </div>
 
     <!--add zoom in on images-->
-    <div class="flex section-spacing">
+    <!--why the redesign-->
+    <div class=" section-spacing">
         <div class="md:max-w-3xl">
-           <h1 class="text-mh1 pb-2 md:text-dh1">Why the redesign?</h1>
-            <p>Although users find the app pretty straight-forward and easy to use because of it’s simplicity, they still tend to look for information through their Facebook page, website, or their email when they can’t access those information through the app.<br><br>
+            <div class="">
+                <h1 class="text-mh1 pb-2 md:text-dh1">Why the redesign?</h1>
+                <p>Although users find the app pretty straight-forward and easy to use because of it’s simplicity, they still tend to look for information through their Facebook page, website, or their email when they can’t access those information through the app.<br><br>
 
-            Prior doing user research, I discovered that there is no means for the user to cancel their booking in the app. Users will, instead, cancel their booking by messaging their Facebook page. For some instances, this can also have an impact to Trash panda’s resources since fees are not paid upfront upon booking.</p>
+                Prior doing user research, I discovered that there is no means for the user to cancel their booking in the app. Users will, instead, cancel their booking by messaging their Facebook page. For some instances, this can also have an impact to Trash panda’s resources since fees are not paid upfront upon booking.</p>
+            </div>
+            <div class="object-cover my-4">
+                <img class="" src="img/trash panda/Main screen sample.png" alt="task flow of finding collection fee in Trash panda app">
+            </div>
             
-            <img class="my-3" src="img/trash panda/Main screen sample.png" alt="task flow of finding collection fee in Trash panda app">
+            
         </div>
     </div>
 
     <!--the process-->
-    <div class="flex section-spacing">
+    <div class="section-spacing">
         <div class="md:max-w-3xl">
             <h1 class="text-mh1 pb-2 md:text-dh1">The process</h1>
-            <div>
-                <p>My first step in research is by reading through comments on their Facebook page to see the bigger picture first and used this opportunity to reach out to invite them for interview or usability testing.</p>
 
-                <img class="my-3" src="img/trash panda/User concerns on Facebook.png" alt="User concerns on Facebook posts">  
+            <!--first step (comment)-->
+            <div class="">
+                <div class="subsection-spacing">
+                    <p>My first step in research is by reading through comments on their Facebook page to see the bigger picture first and used this opportunity to reach out to invite them for interview or usability testing.</p>    
+                </div>
+                <div>
+                    <img class="mt-3 mb-1" src="img/trash panda/User concerns on Facebook.png" alt="User concerns on Facebook posts">  
+                </div>
             </div>
+        
+            <!--affinity diagram-->
+            <!--fix the list-->
+            <div class="subsection-spacing">
+                <p>After analyzing and collecting relevant data from Facebook page, interview and one round of usability testing for the current design, I grouped them into themes to easily recognize and prioritize the problems.<br><br>
+
+                I prioritized problems based on how frequent the theme occurs in the research phase.
+                </p>
+
+                <img class="py-3" src="img/trash panda/trash panda affinity diagram.PNG" alt="Affinity diagram of information from user research">
+
+                <p class="font-semibold">Insights from comments, interviews and usability testing</p>
+                <ul>
+                    <li>When they are not sure about the classifications, they ask through commenting on a Facebook post. </li>
+                    <li>Some get an impression that the service is free since it’s garbage collection or they are partnered with their local government.</li>
+                    <li>They want to know how much the base rate is to compare it against other services or drop-off points.</li>
+                    <li>Users who already booked, they usually check their emails or wait for an open slot and simulate a booking to calculate the fees.</li>
+                    <li>They are expecting to see a map with the driver’s location to know when to expect them.</li>
+                    <li>Users assume they have to reach out through Facebook messenger to cancel their booking.</li>
+                </ul>
+                <p class="font-semibold">Objectives for the redesign</p>
+                <ul class="list-decimal">
+                    <li>Improve information findability to provide users key information about the service.</li>
+                    <li>Maintain straightforward and simplistic approach of the application</li>
+                    <li>Have a systematic approach in tracking booking cancellations from users.</li>
+                </ul>
+            </div>
+            
+            <!--Persona-->
+            <div class="subsection-spacing">
+                <h2 class="text-2xl md:text-dh2">Persona</h2>
+
+                <p>I put a face on Trash Panda’s target audience to easily understand their motivations, problems they encounter, and personality.</p>
+
+                <img class="my-3" src="img/trash panda/Persona.png" alt="Persona">
+            </div>
+
+            <!--Customer journey-->
+            <div class="subsection-spacing">
+                <h2 class="text-2xl md:text-dh2">Customer journey</h2>
+                
+                <p>Not only did this help me understand Jane's touchpoints but also revealed how Jane feels at each phase. This also helped me pinpoint areas outside of the app that can be take into consideration for ideating solutions.</p>
+
+                <img class="my-3" src="img/trash panda/Customer Journey Map.png" alt="Customer journey">
+            </div>
+
+            <!--Sketch-->
+            <div class="subsection-spacing">
+                <h2 class="text-2xl md:text-dh2">Sketches</h2>
+                
+                <p>I sketched out a few possible solutions from the ideation stage. This helped me to <b>focus on the layout</b> rather than aesthetics or design details and allowed me to freely generate as many ideas as I can.</p>
+
+                <img class="my-3" src="img/trash panda/sketch trash panda.PNG" alt="Persona">
+            </div>
+        </div>
+    </div>
+
+    <!--Redesigning-->
+    <div class="section-spacing">
+        <div class="md:max-w-3xl">
+            <h1 class="text-mh1 md:text-dh1">Redesigning</h1>
+            <div class="subsection-spacing">
+                <h3 class="text-mh3 md:text-2xl">#1 - Information findability</h3>
+                <p class="md:text-mdparagraph">I converted the kebab menu into hamburger menu and placed secondary information that users need.<br><br>
+
+                <b>Bottom nav bar</b> - to let users feel in control by freely navigate through the app and access information like fee calculator and accepted recyclables.<br><br>
+                
+                I removed the ‘Book now’ button and replace them with open dates and their booked date with a booking status below
+                </p>
+                <img class="my-3" src="img/trash panda/BA - information findability.png" alt="before and after on finding key information">
+            </div>
+            <div class="subsection-spacing">
+                <h3 class="text-mh3 md:text-2xl">#2 - Cancel booking</h3>
+                <p class="md:text-mdparagraph"><b>Cancel button</b> - I added this on the Booking summary for ease of access, and added a note when the button will be disabled. This can also be easily seen by Trash Panda.
+                </p>
+                <div class="aspect-w-3 aspect-h-2">
+                    <img class="my-3 object-contain object-center" src="img/trash panda/B&A - Cancel booking.png" alt="before and after on cancelling booking">
+                </div>
+            </div>
+            <div class="subsection-spacing">
+                <h3 class="text-mh3 md:text-2xl">#3 - System status & Feedback</h3>
+                <p class="md:text-mdparagraph">Adding confirmation popups and second confirmation to let the users know that the system received their requests or option to undo request.
+                </p>
+                <img class="my-3" src="img/trash panda/B&A - System feedback.png" alt="pop ups for action confirmation">
+            </div>
+            <div class="subsection-spacing">
+                <h3 class="text-mh3 md:text-2xl">#4 - Progress trackers</h3>
+                <p class="md:text-mdparagraph">I replaced the step numbers on the top left part of the booking process with a progress tracker or wizard to help the users know how many steps they have to complete, where they are in the process, and which steps they have completed.
+                </p>
+                <img class="my-3" src="img/trash panda/B&A - New booking.png" alt="progress trackers in new booking journey">
+            </div>
+
+        </div>
+    </div>
+
+    <!--Testing-->
+    <div class="section-spacing">
+        <div class="md:max-w-3xl">
+            <h1 class="text-mh1 md:text-dh1">Testing</h1>
+            <p class="md:text-mdparagraph">To validate my changes to the current design, I asked the usability participants to do these tasks again using Maze and what they have to say.</p>
+            <div class="py-2">
+                <blockquote class="italic px-4 border-l-2 border-denim">"This design is a huge improvement to the current app as it addresses the areas that the app could improve on."</blockquote>
+            </div>
+            <div class="py-2">
+                <blockquote class="italic px-4 border-l-2 border-denim">“The design makes task simpler since its all available now.”</blockquote>
+            </div>
+            <div class="py-2">
+                <blockquote class="italic px-4 border-l-2 border-denim">“It was a bit new to me but its good that there are other option to check this instead of waiting for an open schedule.”</blockquote>
+            </div>
+            
+        </div>
+        <div>
             
         </div>
     </div>
 
+    <!--Reflection-->
+    <div class="section-spacing mb-10">
+        <div class="md:max-w-3xl">
+            <h1 class="text-mh1 md:text-dh1">Reflections and lessons learnt</h1>
+            <div class="subsection-spacing">
+                
+                <h3 class="text-mh3 md:text-2xl">#1 - The taste of the real experience</h3>
+                <p class="">I started very nervous but very excited about this project because I treated this as a real one. After the process, I feel very fulfilled and excited to think about the next case study. This helped me to realize that I</p>
+                <ul>
+                    <li>enjoy generating ideas or solutions</li>
+                    <li>sketching those solutions</li>
+                    <li>keeping the users and the business aligned</li>
+                    <li>it's okay to fail as long as you learn from it.</li>
+                </ul>
+                <p>From that, I was able to drop the things I overthink about and do the best I could.</p>
+            </div>
+            <div class="subsection-spacing">
+                
+                <h3 class="text-mh3 md:text-2xl">#2 Recruitment and user research</h3>
+                <p class="">It was a good experience to talk and reach out to total strangers for the interview, it gave me an idea of how a real user interview will be and prepared me for the next case study.
+                <br><br>
+                The recruitment was more of a challenge than the interview since I relied on Facebook page rather than joining groups that have the same goal as Trash Panda, at the same time.</p>
+            </div>
+            <div class="subsection-spacing">
+                
+                <h3 class="text-mh3 md:text-2xl">#3 - Validation testing</h3>
+                <p class="">It's amazing how I saw how users adjust to, which for me, is a small change. This proves that <b>not every redesign could be successful.</b>
+                    <br><br>
+                I consider this a success because I was not aiming to improve the time on task but convenience. <b>Efficiency just came as a result of providing what the users need in the tasks.</b></p>
+            </div>
+        </div>
+    </div>
     
     <!--footer-->
     <footer class="border-t-2 border-gray-200">

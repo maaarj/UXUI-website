@@ -426,7 +426,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  font-size: 19px;
 }
 
 h1,
@@ -495,6 +494,26 @@ ul, ol {
   --tw-backdrop-sepia:  ;
 }
 
+.aspect-w-3 {
+  position: relative;
+  padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
+  --tw-aspect-w: 3;
+}
+
+.aspect-w-3 > * {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.aspect-h-2 {
+  --tw-aspect-h: 2;
+}
+
 .fixed {
   position: fixed;
 }
@@ -532,6 +551,11 @@ ul, ol {
   margin-bottom: 0.5rem;
 }
 
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .my-3 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
@@ -539,6 +563,18 @@ ul, ol {
 
 .mb-6 {
   margin-bottom: 1.5rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 
 .block {
@@ -587,6 +623,10 @@ ul, ol {
   flex-basis: 33.333333%;
 }
 
+.list-decimal {
+  list-style-type: decimal;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -633,6 +673,10 @@ ul, ol {
   border-top-width: 2px;
 }
 
+.border-l-2 {
+  border-left-width: 2px;
+}
+
 .border-elephant {
   --tw-border-opacity: 1;
   border-color: rgb(27 48 69 / var(--tw-border-opacity));
@@ -641,6 +685,11 @@ ul, ol {
 .border-gray-200 {
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
+}
+
+.border-denim {
+  --tw-border-opacity: 1;
+  border-color: rgb(58 91 136 / var(--tw-border-opacity));
 }
 
 .bg-white {
@@ -668,9 +717,19 @@ ul, ol {
   background-color: rgb(231 237 255 / var(--tw-bg-opacity));
 }
 
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.object-center {
+  -o-object-position: center;
+     object-position: center;
 }
 
 .px-4 {
@@ -708,9 +767,9 @@ ul, ol {
   padding-right: 0.75rem;
 }
 
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .pb-2 {
@@ -721,8 +780,8 @@ ul, ol {
   padding-top: 1rem;
 }
 
-.pb-1 {
-  padding-bottom: 0.25rem;
+.pl-2 {
+  padding-left: 0.5rem;
 }
 
 .text-center {
@@ -731,10 +790,6 @@ ul, ol {
 
 .font-\[\'Montserrat\'\] {
   font-family: 'Montserrat';
-}
-
-.text-mdparagrap {
-  font-size: 1.188rem;
 }
 
 .text-mdisplay1 {
@@ -769,6 +824,10 @@ ul, ol {
 
 .font-normal {
   font-weight: 400;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .tracking-wide {
@@ -885,7 +944,6 @@ ul, ol {
 
 .card p {
   padding-bottom: 0.5rem;
-  font-size: 1.188rem;
 }
 
 .card button {
@@ -903,6 +961,7 @@ ul, ol {
 }
 
 .section-spacing {
+  display: flex;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -924,6 +983,37 @@ ul, ol {
   .section-spacing {
     padding-left: 88px;
     padding-right: 88px;
+  }
+}
+
+/*see if this subsection spacing is applicable*/
+
+.subsection-spacing {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  p {
+    font-size: 1.18rem;
+  }
+}
+
+ul > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+}
+
+ul {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  ul {
+    font-size: 1.18rem;
   }
 }
 
@@ -963,13 +1053,20 @@ ul, ol {
     font-size: 2rem;
   }
 
+  .md\:text-mdparagraph {
+    font-size: 1.18rem;
+  }
+
   .md\:text-dh1 {
     font-size: 2.5rem;
   }
-}
 
-@media (min-width: 1024px) {
-  .lg\:p-4 {
-    padding: 1rem;
+  .md\:text-dh2 {
+    font-size: 2rem;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }

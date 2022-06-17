@@ -9,11 +9,13 @@ module.exports = {
         'mdisplay1': '2.5rem', // 40px
         'mh1': '2rem', // 32px
         'mh3': '1.375rem', // 22px
+        'mdparagraph':'1.18rem',
         'micon' : '1.5rem',
         
         //tablet + desktop
         'dh1': '2.5rem', // 40px
         'ddisplay2': '2rem', // 32px
+        'dh2': '2rem', // 32px
       },
       colors: {
         'white-smoke': '#F1F4F9',
@@ -24,5 +26,7 @@ module.exports = {
       
     },
   },
-  plugins: [require("@tailwindcss/line-clamp")],
+  plugins: [
+    require("@tailwindcss/line-clamp"),
+    require("@tailwindcss/aspect-ratio")]
 }
