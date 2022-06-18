@@ -46,7 +46,9 @@
 }
 
 .card {
-    @apply bg-white rounded-xl overflow-hidden shadow-md;
+    @apply flex flex-col mb-8 md:flex-row
+    bg-white rounded-xl overflow-hidden shadow-md
+    transition ease-in-out delay-150 transform hover:-translate-y-3 hover:scale-110;
 }
 
 .card-thumbnail {
@@ -58,7 +60,7 @@
 }
 
 .card p {
-    @apply pb-2;
+    @apply text-base pb-2;
 }
 
 .card button {
