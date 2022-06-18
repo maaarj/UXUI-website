@@ -37,7 +37,7 @@
 .banner {
     @apply pt-20 pb-28 px-4 text-center 
     md:px-10
-    lg:px-28
+    lg:px-[88px]
     lg:pt-32;
 }
 
@@ -73,12 +73,17 @@
 
 /*see if this subsection spacing is applicable*/
 .subsection-spacing {
-    @apply py-3;
+    @apply py-4;
+}
+
+h1, h2, h3 {
+    @apply py-3 ;
 }
 
 p {
     @apply md:text-mdparagraph;
 }
+
 
 ul {
     @apply py-3 pl-5 space-y-1

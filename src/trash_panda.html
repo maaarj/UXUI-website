@@ -21,8 +21,9 @@
 
 <body class="bg-white text-elephant"> <!--do margin last-->
     
+    <!--different height from home-->
     <nav class="bg-white relative"><!--nav links should be at right side instead-->
-        <div class="max-w-6xl px-4"> <!--fixed top this-->
+        <div class="max-w-6xl px-6 py-2"> <!--fixed top this-->
             <div class="flex justify-between">
                 <div class="flex gap-8">
                     <div>
@@ -59,7 +60,7 @@
         </div>
         <!-- mobile menu -->
         <div class="hidden mobile-menu">
-            <ul class="font-normal">
+            <ul class="font-normal list-none py-0 pl-0">
                 <li class="active"><a href="index.html" class="block px-2 py-4 text-white bg-elephant">Home</a></li>
                 <li><a href="#about" class="block px-2 py-4 ">About</a></li>
                 <li><a href="#contact" class="block  px-2 py-4">Contact</a></li>
@@ -74,44 +75,54 @@
             });
         </script>
     </nav>
+
     <!--banner should be extending behind nav-->
-    <div class="">
+    
         <div class="border-b-2 border-gray-200 relative overflow-hidden">
-            <img class= "object-cover h-96 w-full" src="img/trash panda/heroimage.jpg">
-            <!--overlay-->
-            <div class="banneroverlay"></div>
-            <div class="flex items-center justify-center absolute inset-5">
-                <h1 class="text-mdisplay1 text-white py-2 md:text-5xl md:py-6">Trash Panda redesign</h1>
+            <div class="md:max-w-5xl">
+                <img class= "object-cover h-96 w-full" src="img/trash panda/heroimage.jpg">
+                <!--overlay-->
+                <div class="banneroverlay"></div>
+                <div class="flex items-center absolute inset-5">
+                    <h1 class="text-mdisplay1 text-center text-white py-2 md:text-5xl md:py-6">Trash Panda redesign</h1>
+                </div>
             </div>
-            
         </div> 
-    </div>
+    
     
     <!--high level overview -->
-    <div class="flex flex-col h-fit py-16 px-3 md:flex-row"><!--PROLLY ADD ANOTHER FLEX DIV. REMOVE FLEX FROM WRAPPER edit later-->
-        <div class="basis-1/3">
+    <div class="section-spacing flex-col gap-y-4 md:flex-row md:py-16 md:gap-x-7 justify-center"><!--PROLLY ADD ANOTHER FLEX DIV. REMOVE FLEX FROM WRAPPER edit later-->
+        <div class="basis-1/3 py-4 md:border-t-2 md:border-denim">
             <h4>Roles</h4>
-            <ul class="pl-2">
+            <ul class="">
                 <li>UX Researcher</li>
                 <li>UI/UX Designer</li>
             </ul>
         </div>
-        <div class="basis-1/3">
+        
+        <div class="basis-1/3 py-4 md:border-t-2 md:border-denim">
+            <h4>Tools</h4>
+            <ul>
+                <li>Figma</li>
+                <li>Krita</li>
+                <li>Maze</li>
+                <li>Notion</li>
+            </ul>
+        </div>
+
+        <div class="basis-1/3 py-4 md:border-t-2 md:border-denim">
             <h4>Project timeline</h4>
             <p>3 months(Aug 2021 - Nov 2021)</p>
-        </div>
-        <div class="basis-1/3">
-            <h4>Tools</h4>
-            <p>Figma, Krita, Maze, Notion</p>
         </div>
     </div>
 
     <!--Trash panda-->
     <div class="bg-[#E7EDFF] section-spacing">
         <div class="md:max-w-3xl">
-            <h3 class="text-mh3 pb-2">Trash Panda</h3>
-            <p class="md:text-mdparagraph">Due to the increase of plastic waste during the pandemic, people who are conscious about their waste looked for another way to dispose their recyclables besides dropping it off to facilities or drop-off points. Trash panda offers a pick-up service for their recyclables.<br><br>
-            To further understand their unique personality, needs and pain points, I reached out to people who left a comment on Trash panda’s Facebook posts and invited them for interview or usability testing. This led me for a partial redesign to easily find information and have a systematic way to cancel booking. </p>
+            <h3 class="text-mh3">Trash Panda</h3>
+            <p class="md:text-mdparagraph">Due to the increase of plastic waste during the pandemic, people who are conscious about their waste looked for another way to dispose their recyclables. Trash panda offers a pick-up service for their recyclables and assurance that it will go to proper facilities.
+                <br><br>
+            To further understand their unique personality, needs and pain points, I reached out to people from their Facebook posts and invited them for interview or usability testing. This led me for a partial redesign to easily find information, have a systematic way to cancel booking, and system feedback. </p>
         </div>
     </div>
 
@@ -120,10 +131,10 @@
     <div class=" section-spacing">
         <div class="md:max-w-3xl">
             <div class="">
-                <h1 class="text-mh1 pb-2 md:text-dh1">Why the redesign?</h1>
+                <h1 class="text-mh1 md:text-dh1">Why the redesign?</h1>
                 <p>Although users find the app pretty straight-forward and easy to use because of it’s simplicity, they still tend to look for information through their Facebook page, website, or their email when they can’t access those information through the app.<br><br>
 
-                Prior doing user research, I discovered that there is no means for the user to cancel their booking in the app. Users will, instead, cancel their booking by messaging their Facebook page. For some instances, this can also have an impact to Trash panda’s resources since fees are not paid upfront upon booking.</p>
+                Prior doing user research, I discovered that there is <b>no means for the user to cancel their booking</b> in the app. Users will, instead, cancel their booking by messaging their Facebook page. For some instances, this can also have an <b>impact</b> to Trash panda’s <b>resources</b> since fees are not paid upfront upon booking.</p>
             </div>
             <div class="object-cover my-4">
                 <img class="" src="img/trash panda/Main screen sample.png" alt="task flow of finding collection fee in Trash panda app">
@@ -136,7 +147,7 @@
     <!--the process-->
     <div class="section-spacing">
         <div class="md:max-w-3xl">
-            <h1 class="text-mh1 pb-2 md:text-dh1">The process</h1>
+            <h1 class="text-mh1 md:text-dh1">The process</h1>
 
             <!--first step (comment)-->
             <div class="">
@@ -156,7 +167,7 @@
                 I prioritized problems based on how frequent the theme occurs in the research phase.
                 </p>
 
-                <img class="py-3" src="img/trash panda/trash panda affinity diagram.PNG" alt="Affinity diagram of information from user research">
+                <img class="py-4" src="img/trash panda/trash panda affinity diagram.PNG" alt="Affinity diagram of information from user research">
 
                 <p class="font-semibold">Insights from comments, interviews and usability testing</p>
                 <ul>
@@ -167,7 +178,7 @@
                     <li>They are expecting to see a map with the driver’s location to know when to expect them.</li>
                     <li>Users assume they have to reach out through Facebook messenger to cancel their booking.</li>
                 </ul>
-                <p class="font-semibold">Objectives for the redesign</p>
+                <p class="font-semibold pt-3">Objectives for the redesign</p>
                 <ul class="list-decimal">
                     <li>Improve information findability to provide users key information about the service.</li>
                     <li>Maintain straightforward and simplistic approach of the application</li>
@@ -181,7 +192,7 @@
 
                 <p>I put a face on Trash Panda’s target audience to easily understand their motivations, problems they encounter, and personality.</p>
 
-                <img class="my-3" src="img/trash panda/Persona.png" alt="Persona">
+                <img class="py-3" src="img/trash panda/Persona.png" alt="Persona">
             </div>
 
             <!--Customer journey-->
@@ -190,7 +201,7 @@
                 
                 <p>Not only did this help me understand Jane's touchpoints but also revealed how Jane feels at each phase. This also helped me pinpoint areas outside of the app that can be take into consideration for ideating solutions.</p>
 
-                <img class="my-3" src="img/trash panda/Customer Journey Map.png" alt="Customer journey">
+                <img class="py-3" src="img/trash panda/Customer Journey Map.png" alt="Customer journey">
             </div>
 
             <!--Sketch-->
@@ -199,7 +210,7 @@
                 
                 <p>I sketched out a few possible solutions from the ideation stage. This helped me to <b>focus on the layout</b> rather than aesthetics or design details and allowed me to freely generate as many ideas as I can.</p>
 
-                <img class="my-3" src="img/trash panda/sketch trash panda.PNG" alt="Persona">
+                <img class="py-3" src="img/trash panda/sketch trash panda.PNG" alt="Persona">
             </div>
         </div>
     </div>
@@ -216,27 +227,27 @@
                 
                 I removed the ‘Book now’ button and replace them with open dates and their booked date with a booking status below
                 </p>
-                <img class="my-3" src="img/trash panda/BA - information findability.png" alt="before and after on finding key information">
+                <img class="py-3" src="img/trash panda/BA - information findability.png" alt="before and after on finding key information">
             </div>
             <div class="subsection-spacing">
                 <h3 class="text-mh3 md:text-2xl">#2 - Cancel booking</h3>
                 <p class="md:text-mdparagraph"><b>Cancel button</b> - I added this on the Booking summary for ease of access, and added a note when the button will be disabled. This can also be easily seen by Trash Panda.
                 </p>
                 <div class="aspect-w-3 aspect-h-2">
-                    <img class="my-3 object-contain object-center" src="img/trash panda/B&A - Cancel booking.png" alt="before and after on cancelling booking">
+                    <img class="py-3 object-contain object-center" src="img/trash panda/B&A - Cancel booking.png" alt="before and after on cancelling booking">
                 </div>
             </div>
             <div class="subsection-spacing">
                 <h3 class="text-mh3 md:text-2xl">#3 - System status & Feedback</h3>
                 <p class="md:text-mdparagraph">Adding confirmation popups and second confirmation to let the users know that the system received their requests or option to undo request.
                 </p>
-                <img class="my-3" src="img/trash panda/B&A - System feedback.png" alt="pop ups for action confirmation">
+                <img class="py-3" src="img/trash panda/B&A - System feedback.png" alt="pop ups for action confirmation">
             </div>
             <div class="subsection-spacing">
                 <h3 class="text-mh3 md:text-2xl">#4 - Progress trackers</h3>
                 <p class="md:text-mdparagraph">I replaced the step numbers on the top left part of the booking process with a progress tracker or wizard to help the users know how many steps they have to complete, where they are in the process, and which steps they have completed.
                 </p>
-                <img class="my-3" src="img/trash panda/B&A - New booking.png" alt="progress trackers in new booking journey">
+                <img class="py-3" src="img/trash panda/B&A - New booking.png" alt="progress trackers in new booking journey">
             </div>
 
         </div>
@@ -247,7 +258,7 @@
         <div class="md:max-w-3xl">
             <h1 class="text-mh1 md:text-dh1">Testing</h1>
             <p class="md:text-mdparagraph">To validate my changes to the current design, I asked the usability participants to do these tasks again using Maze and what they have to say.</p>
-            <div class="py-2">
+            <div class="py-3">
                 <blockquote class="italic px-4 border-l-2 border-denim">"This design is a huge improvement to the current app as it addresses the areas that the app could improve on."</blockquote>
             </div>
             <div class="py-2">
@@ -256,7 +267,7 @@
             <div class="py-2">
                 <blockquote class="italic px-4 border-l-2 border-denim">“It was a bit new to me but its good that there are other option to check this instead of waiting for an open schedule.”</blockquote>
             </div>
-            
+            <img class="py-3" src="img/trash panda/Validation results.png" alt="Results of the redesign from the validation testing">
         </div>
         <div>
             
@@ -264,7 +275,7 @@
     </div>
 
     <!--Reflection-->
-    <div class="section-spacing mb-10">
+    <div class="bg-[#E7EDFF] section-spacing">
         <div class="md:max-w-3xl">
             <h1 class="text-mh1 md:text-dh1">Reflections and lessons learnt</h1>
             <div class="subsection-spacing">
@@ -295,7 +306,21 @@
             </div>
         </div>
     </div>
-    
+
+    <!--PDF Portfolio-->
+
+    <!--Quotation-->
+    <div class="bg-[#E7EDFF] section-spacing">
+        <div class="md:max-w-3xl">
+            <blockquote class="italic text-mh3 md:text-2xl">
+                "Start where you are. Use what you have. Do what you can."
+            </blockquote>
+            <cite>
+                <p class="text-right">– Arthur Ashe</p>
+            </cite>
+        </div>
+    </div>
+
     <!--footer-->
     <footer class="border-t-2 border-gray-200">
         <div class="max-full px-4 mx-auto py-8 text-center">

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
 
     <!--stylesheets-->
     <link href="/dist/output.css" rel="stylesheet">
@@ -22,9 +22,9 @@
 <body class="bg-white text-elephant"> <!--do margin last-->
     
     <nav class="bg-white relative"><!--nav links should be at right side instead-->
-        <div class="fixed top-0 max-w-6xl px-4"> <!--large nav bar-->
+        <div class="max-w-6xl px-6 py-2"> <!--fixed top this-->
             <div class="flex justify-between">
-                <div class="flex gap-8 ">
+                <div class="flex gap-8">
                     <div>
                         <!-- Website Logo -->
                         <a href="index.html" class="flex items-center py-4 px-2">
@@ -59,7 +59,7 @@
         </div>
         <!-- mobile menu -->
         <div class="hidden mobile-menu">
-            <ul class="font-normal">
+            <ul class="font-normal list-none py-0 pl-0">
                 <li class="active"><a href="index.html" class="block px-2 py-4 text-white bg-elephant">Home</a></li>
                 <li><a href="#about" class="block px-2 py-4 ">About</a></li>
                 <li><a href="#contact" class="block  px-2 py-4">Contact</a></li>
@@ -76,12 +76,13 @@
     </nav>
 
     <!--banner msg-->
-    <div class="banner border-b-2 border-gray-200 ">
-        <h1 class="text-mdisplay1 py-2 md:text-5xl md:py-6">Supporting users through meaningful design</h1>
+    <div class="flex banner border-b-2 border-gray-200 justify-center">
+        <div class="md:max-w-5xl">
+            <h1 class="text-mdisplay1 py-2 md:text-5xl md:py-6">Supporting users through meaningful design</h1>
         
-        <h2 class="font-['Montserrat'] text-2xl py-2 text-regent-gray md:text-ddisplay2 md:py-6">I'm a UX/UI designer from Philippines with a background in Technical support and Computer Science.</h2>
+            <h2 class="font-['Montserrat'] text-mdparagraph py-2 text-regent-gray leading-normal md:text-ddisplay2 md:py-6">👋 I'm Marj, a UX/UI designer with a experience in Technical support and Computer Science.</h2>
 
-        
+        </div>
     </div>
 
     <!--case study wrapper-->
@@ -106,7 +107,7 @@
                     <h5 class="text-regent-gray pb-2 tracking-wide">UX Research / UI Design</h5>
                     <h1 class="">Trash panda redesign</h1>
 
-                    <p>Improving in-app information visibility and testing future features.</p>            
+                    <p>Improving in-app information findability and booking cancellation system.</p>            
                     <a href="trash_panda.html">
                        <button>View case study</button>   
                     </a>
@@ -142,8 +143,8 @@
     <footer class="border-t-2 border-gray-200">
         <div class="max-full px-4 mx-auto py-8 text-center">
             <span class="block text-mh1">Let's work together</span>
-            <h4 class="my-2">
-                or just wanna connect? Sure!
+            <h4 class="my-2 text-mdparagraph">
+                or just wanna connect? Sure! 👌
             </h4>
             
             <div class="flex justify-center gap-8 text-3xl pt-4">
