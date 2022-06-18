@@ -48,7 +48,7 @@
 .card {
     @apply flex flex-col mb-8 md:flex-row
     bg-white rounded-xl overflow-hidden shadow-md
-    transition ease-in-out delay-150 transform hover:-translate-y-3 hover:scale-110;
+    transition ease-in-out delay-75 transform hover:-translate-y-3 hover:scale-110 duration-500;
 }
 
 .card-thumbnail {
