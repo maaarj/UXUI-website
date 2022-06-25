@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <!--stylesheets-->
+    <link href="/dist/output.css" rel="stylesheet">
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Trirong:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!--icons-->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <title>About me</title>
+</head>
+
+<body class="bg-white text-elephant">
+    <nav class="bg-white relative"><!--nav links should be at right side instead-->
+        <div class="max-w-6xl px-6 pt-2"> <!--fixed top this-->
+            <div class="flex justify-between">
+                <div class="flex gap-8">
+                    <div>
+                        <!-- Website Logo -->
+                        <a href="index.html" class="flex items-center py-4 px-2">
+                            <span class="font-semibold text-mdparagrap  tracking-wide">Marj Corona</span>
+                        </a>
+                    </div>
+                    <!-- Primary Navbar items -->
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="index.html" class="py-4 px-2 text-elephant hover:text-elephant transition duration-300 font-semibold">Home</a>
+                    
+                        <a href="" class="py-4 px-2 text-regent-gray font-semibold hover:text-elephant transition duration-300">About</a>
+                        <a href="" class="py-4 px-2 text-regent-gray font-semibold hover:text-elephant transition duration-300">Contact</a>
+                    </div>
+                </div>
+            
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                    <svg class=" w-6 h-6"
+                        x-show="!showMenu"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+                </div>
+            </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu">
+            <ul class="font-normal list-none py-0 pl-0">
+                <li class="active"><a href="index.html" class="block px-2 py-4 text-white bg-elephant">Home</a></li>
+                <li><a href="#about" class="block px-2 py-4 ">About</a></li>
+                <li><a href="#contact" class="block  px-2 py-4">Contact</a></li>
+            </ul>
+        </div>
+        <script>
+            const btn = document.querySelector("button.mobile-menu-button");
+            const menu = document.querySelector(".mobile-menu");
+
+            btn.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+            });
+        </script>
+    </nav>
+
+    <!--middle align text to image-->
+    <div class="section-spacing">
+        <div class="flex flex-col gap-4 md:flex-row">
+           <div class="basis-5/12">
+                <img src="img/picture-of-me.jpg">
+            </div>
+            <div class="basis-7/12">
+                <div class="h-fit justify-center">
+                    <h1 class="text-mh1 md:text-dh1">Hello, hello!👋</h1>
+                    <div>
+                        <p>I'm <b>Marjie Lorraine Corona,</b> a computer science graduate and decided to transition to UI/UX after working as a Technical Support. This experience exposed me to user’s problem, not only with the product itself but with technology in general.
+                        </p>
+                        <div class="flex justify-start gap-4 text-3xl pt-4 pl-4">
+                            <a href="https://www.linkedin.com/in/marjie-corona/" target="_blank" rel="noreferrer noopener">
+                                <i class="text-denim text-3xl fi fi-brands-linkedin"></i>
+                                
+                            </a>
+                            <a class="ins-ic" href="mailto: marj.corona97@gmail.com">
+                                <i class="text-denim text-micon fi fi-sr-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div> 
+            </div>
+
+            
+        </div>
+    </div>
+
+    <div class="py-7 px-4 md:px-10 lg:px-[88px]">
+        <h3 class="text-mh3 md:text-2xl">On my spare time</h3>
+        <p>At my spare time I love to listen to podcast about funny stuff, life, design, and when I’m brave enough scary / mystery stuff 😂 I love to take a walk when it’s not super hot and lastly, I’m a cat mom, therefore you can imagine how involved my cats are in everything I do at home. </p>
+        <br>
+
+        <p class="text-regent-gray">I like to sing every once in a while(for myself 🤫)</p>
+        <br>
+    </div>
+    <div class="section-spacing bg-white-smoke">
+        <blockquote class="italic text-mh3 md:text-2xl">
+            “The only thing I share with COVID is my name.”
+        </blockquote>
+        <cite>
+            <p class="text-right">– Marj Corona</p>
+        </cite>
+    </div>
+
+    <!--footer-->
+    <footer class="border-t-2 border-gray-200">
+        <div class="max-full px-4 mx-auto py-8 text-center">
+            <span class="block text-mh1">Let's work together</span>
+            <h4 class="my-2">
+                or just wanna connect? Sure!
+            </h4>
+            
+            <div class="flex justify-center gap-8 text-3xl pt-4">
+                <a href="https://www.linkedin.com/in/marjie-corona/" target="_blank" rel="noreferrer noopener">
+                    <i class="text-denim text-3xl fi fi-brands-linkedin"></i>
+                    
+                </a>
+                <a class="ins-ic" href="mailto: marj.corona97@gmail.com">
+                    <i class="text-denim text-micon fi fi-sr-envelope"></i>
+                </a>
+            </div>
+            
+        </div>
+        
+    </footer>
+    
+</body>
+</html>

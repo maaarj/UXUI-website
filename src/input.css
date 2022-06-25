@@ -1,10 +1,10 @@
-@tailwind0 base;
-0@tailwind components;
-00@tailwind utilities;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 
 
-0000@layer base
+@layer base
 {
     body {
         font-family: 'Montserrat', sans-serif;
