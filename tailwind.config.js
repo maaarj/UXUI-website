@@ -9,8 +9,8 @@ module.exports = {
         'mdisplay1': '2.5rem', // 40px
         'mh1': '2rem', // 32px
         'mh3': '1.375rem', // 22px
-        'mdparagraph':'1.18rem',
-        'micon' : '1.5rem',
+        'mdparagraph':'1.18rem', //19px
+        'micon' : '1.5rem', //24px
         
         //tablet + desktop
         'dh1': '2.5rem', // 40px

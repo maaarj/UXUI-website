@@ -1,10 +1,10 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@tailwind0 base;
+0@tailwind components;
+00@tailwind utilities;
 
 
 
-@layer base
+0000@layer base
 {
     body {
         font-family: 'Montserrat', sans-serif;
@@ -78,7 +78,7 @@
     @apply py-4;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     @apply py-3 ;
 }
 
