@@ -74,27 +74,29 @@
         </script>
     </nav>
 
-    <!--middle align text to image-->
+    <!--vertically middle align image-->
     <div class="section-spacing">
         <div class="flex flex-col gap-4 md:flex-row">
-           <div class="basis-5/12">
-                <img src="img/picture-of-me.jpg">
+           <div class="flex basis-5/12 justify-center my-auto">
+                <img class="rounded-full border border-4 border-denim h-72 object-cover" src="img/picture-of-me.jpg">
             </div>
             <div class="basis-7/12">
                 <div class="h-fit justify-center">
-                    <h1 class="text-mh1 md:text-dh1">Hello, hello!👋</h1>
+                    <div class="flex">
+                        <h1 class=" text-mh1 md:text-dh1">Hello, hello!<svg class="h-fit w-fit animate-wiggle">👋</svg>
+                    </div>
+                    <h1 class="text-mh1 md:text-dh1">Hello, hello!<div class="animate-wiggle">👋</div>👋</h1>
                     <div>
                         <p>I'm <b>Marjie Lorraine Corona,</b> a computer science graduate and decided to transition to UI/UX after working as a Technical Support. This experience exposed me to user’s problem, not only with the product itself but with technology in general.
+                        <br><br>
+                        You can directly reach out to me through my 
+                        <a class="underline underline-offset-4" href="https://www.linkedin.com/in/marjie-corona/" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+
+                        or 
+
+                        <a class="underline underline-offset-4" href="mailto: marj.corona97@gmail.com">marj.corona97@gmail.com</a>
                         </p>
-                        <div class="flex justify-start gap-4 text-3xl pt-4 pl-4">
-                            <a href="https://www.linkedin.com/in/marjie-corona/" target="_blank" rel="noreferrer noopener">
-                                <i class="text-denim text-3xl fi fi-brands-linkedin"></i>
-                                
-                            </a>
-                            <a class="ins-ic" href="mailto: marj.corona97@gmail.com">
-                                <i class="text-denim text-micon fi fi-sr-envelope"></i>
-                            </a>
-                        </div>
+                        
                     </div>
                     
                 </div> 
@@ -104,21 +106,21 @@
         </div>
     </div>
 
-    <div class="py-7 px-4 md:px-10 lg:px-[88px]">
-        <h3 class="text-mh3 md:text-2xl">On my spare time</h3>
-        <p>At my spare time I love to listen to podcast about funny stuff, life, design, and when I’m brave enough scary / mystery stuff 😂 I love to take a walk when it’s not super hot and lastly, I’m a cat mom, therefore you can imagine how involved my cats are in everything I do at home. </p>
-        <br>
+    <div class="section-spacing">
+        <div class="md:max-w-3xl">
+            <h3 class="text-mh3 md:text-2xl">On my spare time</h3>
+            <p>At my spare time I love to listen to podcast about funny stuff, life, design, and when I’m brave enough scary / mystery stuff 😂 I love to take a walk when it’s not super hot and lastly, I’m a cat mom, therefore you can imagine how involved my cats are in everything I do at home. </p>
+            <br>
 
-        <p class="text-regent-gray">I like to sing every once in a while(for myself 🤫)</p>
-        <br>
-    </div>
-    <div class="section-spacing bg-white-smoke">
-        <blockquote class="italic text-mh3 md:text-2xl">
-            “The only thing I share with COVID is my name.”
-        </blockquote>
-        <cite>
-            <p class="text-right">– Marj Corona</p>
-        </cite>
+            <p class="text-regent-gray">I like to sing every once in a while(for myself 🤫)</p>
+            <div class="subsection-spacing">
+                <h3 class="text-mh3 md:text-2xl">Relevant experience</h3>
+                <ul>
+                    <li>Qairos <i>(Intern)</i></li>
+                    <li>Concentrix <i>(Technical Support Representative)</i></li>
+                </ul>
+            </div>
+        </div>
     </div>
 
     <!--footer-->
