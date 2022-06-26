@@ -565,10 +565,6 @@ ul, ol {
   display: block;
 }
 
-.inline-block {
-  display: inline-block;
-}
-
 .flex {
   display: flex;
 }
@@ -599,14 +595,14 @@ ul, ol {
   width: 1.5rem;
 }
 
-.w-full {
-  width: 100%;
-}
-
 .w-fit {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .max-w-6xl {
