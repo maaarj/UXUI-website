@@ -21,48 +21,48 @@
 
 <body class="bg-white text-elephant"> <!--do margin last-->
     
-    <!--different height from home-->
-    <nav class="bg-white relative"><!--nav links should be at right side instead-->
-        <div class="max-w-6xl px-6 pt-2"> <!--fixed top this-->
-            <div class="flex justify-between">
-                <div class="flex gap-8">
-                    <div>
-                        <!-- Website Logo -->
-                        <a href="index.html" class="flex items-center py-4 px-2">
-                            <span class="font-semibold text-mdparagrap  tracking-wide">Marj Corona</span>
-                        </a>
-                    </div>
-                    <!-- Primary Navbar items -->
-                    <div class="hidden md:flex items-center space-x-1">
-                        <a href="index.html" class="py-4 px-2 text-elephant hover:text-elephant transition duration-300 font-semibold">Home</a>
+    <div class="nav-container">
+        <nav class="pt-2 px-4 bg-white">
+        <div class="flex flex-row justify-between">
+            <!--logo-->
+            <div>
+                <a href="index.html" class="flex items-center py-4 px-2">
+                    <span class="font-semibold text-mdparagrap  tracking-wide">Marj Corona</span>
+                </a>
+            </div>
+            <!--primary items-->
+            <div class="md:flex space-x-5 hidden text-regent-gray font-semibold">
+                <a href="index.html" class="py-4 px-2 hover:text-elephant transition duration-300">Home</a>
                     
-                        <a href="" class="py-4 px-2 text-regent-gray font-semibold hover:text-elephant transition duration-300">About</a>
-                        <a href="" class="py-4 px-2 text-regent-gray font-semibold hover:text-elephant transition duration-300">Contact</a>
-                    </div>
-                </div>
-            
-                <!-- Mobile menu button -->
-                <div class="md:hidden flex items-center">
-                    <button class="outline-none mobile-menu-button">
+                <a href="about.html" class="py-4 px-2 hover:text-elephant transition duration-300">About Me</a>
+
+                <a href="#contact" class="py-4 px-2 hover:text-elephant transition duration-300">Contact</a>
+            </div>
+
+            <!--mobile menu-->
+            <div class="md:hidden flex justify-content items-center">
+                <button class="outline-none mobile-menu-button">
                     <svg class=" w-6 h-6"
-                        x-show="!showMenu"
-                        fill="none"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
+                    x-show="!showMenu"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
                         <path d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
+
                 </button>
-                </div>
             </div>
+            
         </div>
-        <!-- mobile menu -->
+
+        <!-- mobile items -->
         <div class="hidden mobile-menu">
-            <ul class="font-normal list-none py-0 pl-0">
-                <li class=""><a href="index.html" class="block px-2 py-4 text-white bg-elephant">Home</a></li>
-                <li><a href="#about" class="block px-2 py-4 ">About</a></li>
+            <ul class="text-regent-gray font-semibold list-none py-0 pl-0 text-right">
+                <li class=""><a href="index.html" class="block px-2 py-4">Home</a></li>
+                <li><a href="#about" class="block px-2 py-4 ">About Me</a></li>
                 <li><a href="#contact" class="block  px-2 py-4">Contact</a></li>
             </ul>
         </div>
@@ -71,10 +71,11 @@
             const menu = document.querySelector(".mobile-menu");
 
             btn.addEventListener("click", () => {
-                menu.classList.toggle("hidden");
+            menu.classList.toggle("hidden");
             });
         </script>
-    </nav>
+        </nav>
+    </div>
 
     <!--banner should be extending behind nav-->
     
@@ -130,6 +131,7 @@
         </div>
     </div>
 
+    <!--users and problem-->
     <div class="section-spacing">
         <div class="max-w-3xl">
             <!--users & problem-->
@@ -232,9 +234,18 @@
         </div>
     </div>
     
+    <!--Next steps-->
+    <div class="section-spacing">
+        <div class="md:max-w-3xl">
+            <h1 class="text-mh1 md:text-dh1">Next steps</h1>
+            <p>
+                If future plans include publishing the application in Google Playstore, it is recommended to test it with the users and then iterate.
+            </p>
+        </div>
+    </div>
 
     <!--Reflection-->
-    <div class="section-spacing">
+    <div class="section-spacing bg-[#E2EEE3]">
         <div class="md:max-w-3xl">
             <h1 class="text-mh1 md:text-dh1">What I learned from this project</h1>
             <div class="subsection-spacing">
@@ -262,7 +273,7 @@
     </div>
 
     <!--footer-->
-    <footer class="border-t-2 border-gray-200">
+    <footer id="contact" class="border-t-2 border-gray-200">
         <div class="max-full px-4 mx-auto py-8 text-center">
             <span class="block text-mh1">Let's work together</span>
             <h4 class="my-2">

@@ -423,6 +423,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -682,16 +686,22 @@ ul, ol {
   justify-content: space-between;
 }
 
-.gap-8 {
-  gap: 2rem;
-}
-
 .gap-4 {
   gap: 1rem;
 }
 
+.gap-8 {
+  gap: 2rem;
+}
+
 .gap-y-4 {
   row-gap: 1rem;
+}
+
+.space-x-5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-x-1 > :not([hidden]) ~ :not([hidden]) {
@@ -712,12 +722,12 @@ ul, ol {
   border-radius: 1rem;
 }
 
-.border {
-  border-width: 1px;
-}
-
 .border-4 {
   border-width: 4px;
+}
+
+.border-b-4 {
+  border-bottom-width: 4px;
 }
 
 .border-t-2 {
@@ -726,10 +736,6 @@ ul, ol {
 
 .border-b-2 {
   border-bottom-width: 2px;
-}
-
-.border-b-4 {
-  border-bottom-width: 4px;
 }
 
 .border-l-2 {
@@ -756,11 +762,6 @@ ul, ol {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-elephant {
-  --tw-bg-opacity: 1;
-  background-color: rgb(27 48 69 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#E7EDFF\] {
   --tw-bg-opacity: 1;
   background-color: rgb(231 237 255 / var(--tw-bg-opacity));
@@ -769,6 +770,11 @@ ul, ol {
 .bg-\[\#E2EEE3\] {
   --tw-bg-opacity: 1;
   background-color: rgb(226 238 227 / var(--tw-bg-opacity));
+}
+
+.bg-elephant {
+  --tw-bg-opacity: 1;
+  background-color: rgb(27 48 69 / var(--tw-bg-opacity));
 }
 
 .bg-white-smoke {
@@ -799,9 +805,9 @@ ul, ol {
   padding: 3rem;
 }
 
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .py-4 {
@@ -819,11 +825,6 @@ ul, ol {
   padding-bottom: 0px;
 }
 
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -839,9 +840,19 @@ ul, ol {
   padding-bottom: 0.75rem;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .pt-2 {
@@ -862,6 +873,22 @@ ul, ol {
 
 .pb-2 {
   padding-bottom: 0.5rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.pt-20 {
+  padding-top: 5rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-center {
@@ -914,6 +941,10 @@ ul, ol {
   font-weight: 400;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
 .italic {
   font-style: italic;
 }
@@ -936,14 +967,14 @@ ul, ol {
   color: rgb(129 150 171 / var(--tw-text-opacity));
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .text-denim {
   --tw-text-opacity: 1;
   color: rgb(58 91 136 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -968,6 +999,15 @@ ul, ol {
 
 .outline {
   outline-style: solid;
+}
+
+.drop-shadow-md {
+  --tw-drop-shadow: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .transition {
@@ -995,6 +1035,17 @@ ul, ol {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
+}
+
+.active {
+  --tw-text-opacity: 1;
+  color: rgb(58 91 136 / var(--tw-text-opacity));
+}
+
+.nav-container {
+  position: fixed;
+  z-index: 30;
+  width: 100%;
 }
 
 .banner {
@@ -1027,7 +1078,7 @@ ul, ol {
   bottom: 0px;
   left: 0px;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
-  --tw-bg-opacity: 0.4;
+  --tw-bg-opacity: 0.5;
 }
 
 .card {
@@ -1205,10 +1256,6 @@ ul {
     flex-direction: row;
   }
 
-  .md\:justify-between {
-    justify-content: space-between;
-  }
-
   .md\:gap-x-7 {
     -moz-column-gap: 1.75rem;
          column-gap: 1.75rem;
@@ -1236,6 +1283,11 @@ ul {
   .md\:py-16 {
     padding-top: 4rem;
     padding-bottom: 4rem;
+  }
+
+  .md\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .md\:text-dh1 {
@@ -1268,5 +1320,10 @@ ul {
 @media (min-width: 1024px) {
   .lg\:flex-row {
     flex-direction: row;
+  }
+
+  .lg\:px-\[88px\] {
+    padding-left: 88px;
+    padding-right: 88px;
   }
 }

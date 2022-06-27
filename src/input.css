@@ -6,6 +6,10 @@
 
 @layer base
 {
+    html {
+        scroll-behavior: smooth;
+    }
+
     body {
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
@@ -28,10 +32,22 @@
         font-style: normal;
         font-weight: 500;   
     }
+
     ul, ol {
         list-style-type: disc;
       }
 
+    
+
+}
+
+.active {
+    @apply
+    text-denim;
+}
+
+.nav-container {
+    @apply w-full fixed z-30;
 }
 
 .banner {
@@ -42,7 +58,7 @@
 }
 
 .banneroverlay {
-    @apply bg-gray-900 bg-opacity-40 absolute inset-0;
+    @apply bg-gray-900 bg-opacity-50 absolute inset-0;
 }
 
 .card {

@@ -21,48 +21,48 @@
 
 <body class="bg-white text-elephant"> <!--do margin last-->
     
-    <!--different height from home-->
-    <nav class="bg-white relative"><!--nav links should be at right side instead-->
-        <div class="max-w-6xl px-6 pt-2"> <!--fixed top this-->
-            <div class="flex justify-between">
-                <div class="flex gap-8">
-                    <div>
-                        <!-- Website Logo -->
-                        <a href="index.html" class="flex items-center py-4 px-2">
-                            <span class="font-semibold text-mdparagrap  tracking-wide">Marj Corona</span>
-                        </a>
-                    </div>
-                    <!-- Primary Navbar items -->
-                    <div class="hidden md:flex items-center space-x-1">
-                        <a href="index.html" class="py-4 px-2 text-elephant hover:text-elephant transition duration-300 font-semibold">Home</a>
+    <div class="nav-container">
+        <nav class="pt-2 px-4 bg-white">
+        <div class="flex flex-row justify-between">
+            <!--logo-->
+            <div>
+                <a href="index.html" class="flex items-center py-4 px-2">
+                    <span class="font-semibold text-mdparagrap  tracking-wide">Marj Corona</span>
+                </a>
+            </div>
+            <!--primary items-->
+            <div class="md:flex space-x-5 hidden text-regent-gray font-semibold">
+                <a href="index.html" class="py-4 px-2 hover:text-elephant transition duration-300">Home</a>
                     
-                        <a href="" class="py-4 px-2 text-regent-gray font-semibold hover:text-elephant transition duration-300">About</a>
-                        <a href="" class="py-4 px-2 text-regent-gray font-semibold hover:text-elephant transition duration-300">Contact</a>
-                    </div>
-                </div>
-            
-                <!-- Mobile menu button -->
-                <div class="md:hidden flex items-center">
-                    <button class="outline-none mobile-menu-button">
+                <a href="about.html" class="py-4 px-2 hover:text-elephant transition duration-300">About Me</a>
+
+                <a href="#contact" class="py-4 px-2 hover:text-elephant transition duration-300">Contact</a>
+            </div>
+
+            <!--mobile menu-->
+            <div class="md:hidden flex justify-content items-center">
+                <button class="outline-none mobile-menu-button">
                     <svg class=" w-6 h-6"
-                        x-show="!showMenu"
-                        fill="none"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
+                    x-show="!showMenu"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
                         <path d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
+
                 </button>
-                </div>
             </div>
+            
         </div>
-        <!-- mobile menu -->
+
+        <!-- mobile items -->
         <div class="hidden mobile-menu">
-            <ul class="font-normal list-none py-0 pl-0">
-                <li class="active"><a href="index.html" class="block px-2 py-4 text-white bg-elephant">Home</a></li>
-                <li><a href="#about" class="block px-2 py-4 ">About</a></li>
+            <ul class="text-regent-gray font-semibold list-none py-0 pl-0 text-right">
+                <li class=""><a href="index.html" class="block px-2 py-4">Home</a></li>
+                <li><a href="#about" class="block px-2 py-4 ">About Me</a></li>
                 <li><a href="#contact" class="block  px-2 py-4">Contact</a></li>
             </ul>
         </div>
@@ -71,10 +71,11 @@
             const menu = document.querySelector(".mobile-menu");
 
             btn.addEventListener("click", () => {
-                menu.classList.toggle("hidden");
+            menu.classList.toggle("hidden");
             });
         </script>
-    </nav>
+        </nav>
+    </div>
 
     <!--banner should be extending behind nav-->
     
@@ -220,11 +221,11 @@
             <h1 class="text-mh1 md:text-dh1">Redesigning</h1>
             <div class="subsection-spacing">
                 <h3 class="text-mh3 md:text-2xl">#1 - Information findability</h3>
-                <p class="md:text-mdparagraph">I converted the kebab menu into hamburger menu and placed secondary information that users need.<br><br>
+                <p class="md:text-mdparagraph">I converted the kebab menu into hamburger menu and placed secondary information that users need. This way the secondary information have dedicated screens for them and the homescreen is focused on their impact and schedule details.<br><br>
 
                 <b>Bottom nav bar</b> - to let users feel in control by freely navigate through the app and access information like fee calculator and accepted recyclables.<br><br>
                 
-                I removed the ‘Book now’ button and replace them with open dates and their booked date with a booking status below
+                I removed the ‘Book now’ button and replace them with open dates and their booked date with a booking status below.
                 </p>
                 <img class="py-3" src="img/trash panda/BA - information findability.png" alt="before and after on finding key information">
             </div>
@@ -270,6 +271,32 @@
         </div>
         <div>
             
+        </div>
+    </div>
+
+    <!--Next steps-->
+    <div class="section-spacing">
+        <div class="md:max-w-3xl">
+            <h1 class="text-mh1 md:text-dh1">Next steps</h1>
+            <p>At the time, Trash panda’s cashback scheme and coaching corner is still in development so I went ahead and designed the screens that can be used to iterate from.</p>
+
+            <div class="subsection-spacing">
+                <h3 class="text-mh3 md:text-2xl">Cashback</h3>
+                <p>
+                    I made the 'Withdrawal' screen with GCash in mind for familiarity so it would be easier for users.
+                </p>
+                <img class="py-3" src="img/trash panda/B&A - Cashback.png">
+            </div>
+
+            <div class="subsection-spacing">
+                <h3 class="text-mh3 md:text-2xl">Coaching corner</h3>
+                <p>
+                    On the redesign, I moved the coaching corner in the hamburger menu to have a dedicated screen of it’s own.
+                </p>
+                <div class="aspect-w-3 aspect-h-2 ">
+                    <img class="filter py-5 object-contain object-center drop-shadow-md" src="img/trash panda/Coaching corner.png" alt="Coaching corner">
+                </div>
+            </div>
         </div>
     </div>
 
@@ -321,7 +348,7 @@
     </div>
 
     <!--footer-->
-    <footer class="border-t-2 border-gray-200">
+    <footer id="contact" class="border-t-2 border-gray-200">
         <div class="max-full px-4 mx-auto py-8 text-center">
             <span class="block text-mh1">Let's work together</span>
             <h4 class="my-2">
@@ -339,7 +366,6 @@
             </div>
             
         </div>
-        
     </footer>
     
 </body>

@@ -21,48 +21,48 @@
 
 <body class="bg-white text-elephant"> <!--do margin last-->
     
-    <nav class="bg-white relative"><!--nav links should be at right side instead-->
-        <div class="flex flex-row justify-between  max-w-6xl px-6 pt-2 "> <!--fixed top this-->
-            
-            <div class="flex justify-between gap-8">
-                <div>
-                        <!-- Website Logo -->
-                    <a href="index.html" class="flex items-center py-4 px-2">
-                            <span class="font-semibold text-mdparagrap  tracking-wide">Marj Corona</span>
-                    </a>
-                </div>
-                <!-- Primary Navbar items -->
-                <div class="hidden md:flex items-center space-x-1">
-                        <a href="index.html" class="py-4 px-2 text-elephant border-b-4 border-elephant hover:text-elephant transition duration-300 font-semibold">Home</a>
-                    
-                        <a href="" class="py-4 px-2 text-regent-gray font-semibold hover:text-elephant transition duration-300">About</a>
-                        <a href="" class="py-4 px-2 text-regent-gray font-semibold hover:text-elephant transition duration-300">Contact</a>
-                </div>
+    <div class="nav-container">
+        <nav class="pt-2 px-4 bg-white">
+        <div class="flex flex-row justify-between">
+            <!--logo-->
+            <div>
+                <a href="index.html" class="flex items-center py-4 px-2">
+                    <span class="font-semibold text-mdparagrap  tracking-wide">Marj Corona</span>
+                </a>
             </div>
-            
-                <!-- Mobile menu button -->
-            <div class="md:hidden flex items-center">
-                    <button class="outline-none mobile-menu-button">
+            <!--primary items-->
+            <div class="md:flex space-x-5 hidden text-regent-gray font-semibold">
+                <a href="index.html" class="active py-4 px-2 hover:text-elephant transition duration-300 border-b-4 border-denim ">Home</a>
+                    
+                <a href="about.html" class="py-4 px-2 hover:text-elephant transition duration-300">About Me</a>
+
+                <a href="#contact" class="py-4 px-2 hover:text-elephant transition duration-300">Contact</a>
+            </div>
+
+            <!--mobile menu-->
+            <div class="md:hidden flex justify-content items-center">
+                <button class="outline-none mobile-menu-button">
                     <svg class=" w-6 h-6"
-                        x-show="!showMenu"
-                        fill="none"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
+                    x-show="!showMenu"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
                         <path d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
+
                 </button>
             </div>
-          
+            
         </div>
 
-        <!-- mobile menu -->
+        <!-- mobile items -->
         <div class="hidden mobile-menu">
-            <ul class="font-normal list-none py-0 pl-0">
-                <li class="active"><a href="index.html" class="block px-2 py-4 text-white bg-elephant">Home</a></li>
-                <li><a href="#about" class="block px-2 py-4 ">About</a></li>
+            <ul class="text-regent-gray font-semibold list-none py-0 pl-0 text-right">
+                <li class="active"><a href="index.html" class="block px-2 py-4">Home</a></li>
+                <li><a href="about.html" class="block px-2 py-4 ">About Me</a></li>
                 <li><a href="#contact" class="block  px-2 py-4">Contact</a></li>
             </ul>
         </div>
@@ -74,14 +74,15 @@
             menu.classList.toggle("hidden");
             });
         </script>
-    </nav>
+        </nav>
+    </div>
 
     <!--banner msg-->
     <div class="flex banner border-b-2 border-gray-200 justify-center">
-        <div class="md:max-w-5xl">
+        <div class="flex flex-col md:max-w-5xl">
             <h1 class="text-mdisplay1 py-2 md:text-5xl md:py-6">Supporting users through meaningful design</h1>
         
-            <h2 class="font-['Montserrat'] text-mdparagraph py-2 text-regent-gray leading-normal md:text-ddisplay2 md:py-6">I'm Marj <div class=" animate-wiggle">👋</div>, UX/UI designer with a experience in Technical support and Computer Science.</h2>
+            <h2 class="font-['Montserrat'] text-mdparagraph py-2 text-regent-gray leading-normal md:text-ddisplay2 md:py-6">I'm Marj, UX/UI designer with a experience in Technical support and Computer Science.</h2>
 
         </div>
     </div>
@@ -142,7 +143,7 @@
     </div>
 
     <!--footer-->
-    <footer class="border-t-2 border-gray-200">
+    <footer id="contact" class="border-t-2 border-gray-200">
         <div class="max-full px-4 mx-auto py-8 text-center">
             <span class="block text-mh1">Let's work together</span>
             <h4 class="my-2 text-mdparagraph">
