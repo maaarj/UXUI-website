@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/maaarj/UXUI-website/issues"
   },
-  "homepage": "https://github.com/maaarj/UXUI-website#readme",
+  "homepage": "https://github.com/maaarj/UXUI-website/src/index.html",
   "devDependencies": {
     "tailwind-scroll-behavior": "^1.0.0",
     "tailwindcss": "^3.0.24"
